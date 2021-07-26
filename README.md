@@ -7,9 +7,11 @@ kernels in the human brain during a novel continuous dot-motion task.
 ======================================================================================
 
 # Contributors
-Maria Ruesseler, Laurence Hunt - wrote the initial version and core functions
-Layla Stahr - adapted the code to run an auditory paradigm in the background
-Lilian Weber - refactored the code into its current form
+Maria Ruesseler, Laurence Hunt: wrote the initial version and core functions
+
+Layla Stahr: adapted the code to run an auditory paradigm in the background
+
+Lilian Weber: refactored the code into its current form
 
 ## Summary
 In the continuous random dot motion (CRDM) task, participants are presented with a 
@@ -66,7 +68,7 @@ off using flags, e.g. `options.doTones` (whether to play an auditory sequence or
 (whether we want to signal response periods to participants by changing the colour of the fixation dot
 during training sessions), etc. All these flags are defined in `crdm_set_task_options`, except
 `doEEG` (which you will be prompted for) and `doDebug` (which determines whether the task will be run
-in full screen or in a small window for debugging. Note that the visual display only works properly
+in full screen or in a small window for debugging). Note that the visual display only works properly
 if you created the stimuli in the same debugMode as you run the task later. 
 
 ## Data saved
