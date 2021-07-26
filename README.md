@@ -1,19 +1,15 @@
+The continuous random dot-motion (CRDM) paradigm
+================================================
+
 This repository contains the task code for running the continuous random dot motion (CRDM) 
-paradigm with an optional auditory paradigm in the background. The CRDM task will be first 
-presented in:
+paradigm with an optional auditory paradigm in the background. Results from the CRDM task 
+will be first presented in:
 
 Ruesseler M, Weber LA, Marshall T, O'Reilly J, Hunt L (_in prep_). Adaptive integration
 kernels in the human brain during a novel continuous dot-motion task.
-======================================================================================
+---------------------------------------------------------------------------------------
 
-# Contributors
-Maria Ruesseler, Laurence Hunt: wrote the initial version and core functions
-
-Layla Stahr: adapted the code to run an auditory paradigm in the background
-
-Lilian Weber: refactored the code into its current form
-
-## Summary
+# Summary
 In the continuous random dot motion (CRDM) task, participants are presented with a 
 continuous (several minutes long) stream of moving dots. Their task is to press a button
 whenever they think they are currently in a period with average motion coherence to the
@@ -27,7 +23,7 @@ according to the four different response types).
 The repository contains all necessary functions, but needs Psychtoolbox (PTB-3) to be installed.
 The code was developed using MATLAB R2019b and tested in the OHBA EEG lab in Oxford.
 
-## Getting started
+# Getting started
 0. Clone this repository and add it to your Matlab path (including subfolders).
 1. Modify the function `crdm_set_task_options` to change general task parameters - including any 
 local settings such as keyboard indices.
@@ -95,7 +91,16 @@ unexpected changes in pitch. If you want to implement a duration MMN instead, yo
 section of the function `crdm_play_session` where the tones are created via the loop over the entries
 of `session.blocks(iBlock).audSequence` (e.g., you can loop over a vector with durations instead).
 
-## Requirements
-- You need MATLAB and Psychtoolbox to run this code. Everything else is included. The code was developed using **MATLAB R2019b**.
+# Requirements
+You need MATLAB and Psychtoolbox to run this code. Everything else is included. The code was developed 
+using **MATLAB R2019b**.
+
+# Contributors
+Maria Ruesseler, Laurence Hunt: wrote the initial version and core functions
+
+Layla Stahr: adapted the code to run an auditory paradigm in the background
+
+Lilian Weber: refactored the code into its current form
+
 
 
