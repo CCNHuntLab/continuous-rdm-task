@@ -1,0 +1,2 @@
+# Ignore data that is saved into the default location
+data/*
