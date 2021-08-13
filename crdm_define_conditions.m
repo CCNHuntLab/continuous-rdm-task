@@ -16,8 +16,7 @@ switch options.design.designLabel
                     blocks(iBlock).instruct.text    = 'Variance is low.';
                     blocks(iBlock).iti.sd           = 0.2;
                     blocks(iBlock).trial.sd         = 0.2;
-                    %blocks(iBlock).trial.cohList    = [-0.2 -0.1 0.1 0.2];
-                    blocks(iBlock).trial.cohList    = [-0.7 -0.6 0.6 0.7];
+                    blocks(iBlock).trial.cohList    = [-0.2 -0.1 0.1 0.2];
 
                 case 2
                     blocks(iBlock).condition        = 2;
