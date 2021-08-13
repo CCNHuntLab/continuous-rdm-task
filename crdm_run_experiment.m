@@ -46,6 +46,13 @@ else
     load(sessionFile, 'session', 'options');
 end
 
+% Add some pre-programmed tone sequences to this session
+promptTones = 'Do you want to add a pre-existing tone sequence? (1=yes, 0=no)\n\n    ';
+addTones = input(promptTones);
+if addTones
+    session = crdm_add_existing_tone_sequence(session);
+end
+
 % Save the session in the subject folder
 save(sessionFile, 'session', 'options');
 
