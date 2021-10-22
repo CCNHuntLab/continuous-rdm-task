@@ -29,9 +29,9 @@ S.options   = options;
 
 % Initialize triggers
 if doEEG
-    %handle = serial('COM9', 'BaudRate', 115200);
-    %fopen(handle);
-    %fwrite(handle, ['mh', 0, 0]); % turn trigger off
+    handle = serial('COM9', 'BaudRate', 115200);
+    fopen(handle);
+    fwrite(handle, ['mh', 0, 0]); % turn trigger off
 end 
 
 % Initialize screen and get initial flip time
@@ -919,9 +919,9 @@ for iBlock = 1: numel(session.blocks)
             end
             
             % Send trigger
-            %fwrite(handle, ['mh', combinedTrigger, 0]);
-            %WaitSecs(0.002);
-            %fwrite(handle, ['mh', 0, 0]);
+            fwrite(handle, ['mh', combinedTrigger, 0]);
+            WaitSecs(0.002);
+            fwrite(handle, ['mh', 0, 0]);
     
             S.visualTriggers{iBlock}(f) = visualTrigger;
             S.combinedTriggers{iBlock}(f) = combinedTrigger;
