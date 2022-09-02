@@ -2,11 +2,12 @@ The continuous random dot-motion (CRDM) paradigm
 ================================================
 
 This repository contains the task code for running the continuous random dot motion (CRDM) 
-paradigm with an optional auditory paradigm in the background. Results from the CRDM task 
-will be first presented in:
+paradigm, with an optional auditory paradigm in the background. Results from the CRDM task 
+will be first presented in: 
 
-Ruesseler M, Weber LA, Marshall T, O'Reilly J, Hunt L (_in prep_). Adaptive integration
-kernels in the human brain during a novel continuous dot-motion task.
+Ruesseler M, Weber LA, Marshall TR, O'Reilly JX, Hunt LT (bioRxiv Preprint, 2022). 
+Decision-making in dynamic, continuously evolving environments: quantifying the flexibility 
+of human choice. 
 ---------------------------------------------------------------------------------------
 
 # Summary
